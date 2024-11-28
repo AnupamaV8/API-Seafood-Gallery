@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food dishes</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Seafood Gallery: Explore Delicious Dishes</h1>
+      <form id="search">
+        <input type="text" id="input" placeholder="Search dishes..." />
+        <input class="button" type="submit" />
+      </form>
+    </header>
+    <div id="container" style="display: none">
+      <ul id="dish-list"></ul>
+      <div id="pagination">
+        <button id="prev-button" class="button" disabled>Previous</button>
+        <button id="next-button" class="button">Next</button>
+      </div>
+    </div>
+    <div id="input-popup" class="popup hidden">
+      <div class="popup-content">
+        <h3>
+          Please enter a dish name (e.g., Fish, Salmon, Sushi, Tuna,and Salad)
+        </h3>
+        <button id="close-popup">Close</button>
+      </div>
+    </div>
+    <div id="details-view" class="hidden">
+      <div class="dish-detail-card">
+        <button id="back-to-gallery">Back to Gallery</button>
+        <img id="detail-image" alt="Dish Image" />
+        <h2 id="detail-title"></h2>
+        <p id="detail-id"></p>
+      </div>
+    </div>
+  </body>
+</html>
